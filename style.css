@@ -63,7 +63,7 @@ header {
 }
 
 nav { margin: 20px 0 0 30px; }
-nav a {
+nav p, a {
   font-size: 2rem;
   color: #202020;
   margin: 0 20px 0 0;
@@ -279,3 +279,146 @@ footer p, a {
   flex-direction: row;
 }
 #participants p { margin: 0 40px 0 0; }
+
+/* MEDIA QUERY BELOW */
+
+@media screen and (max-width: 800px) {
+  header { margin: 0 0 30px 0; }
+  p, a, li {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  h1 { font-size: 3rem;}
+  h2 { 
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  h3 { font-size: 2rem;}
+
+  nav { margin: 5px 0 0 10px; }
+  nav p, a {
+    font-size: 1.2rem;
+      margin: 0 5px 0 0;
+  }
+  #logo {
+    height: 25px;
+    margin: 5px 15px 0 0;
+  }
+
+  main { max-width: 420px; }
+  
+  #hero { 
+    margin: 0 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero p, h1 { margin: 15px 0 15px 0;}
+  #hero h1 { text-align: center;}
+  #hero p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  } 
+  #hero-graphics img {
+    position: absolute;
+    height: 200px;
+    z-index: 20;
+  }
+  #hero-bg {
+    margin: 10px 10px 10px 30px;
+    height: 180px;
+    width: 180px;
+    background-color: var(--accent);
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  #main-card {
+    margin: 15px 20px;
+    border-radius: 20px;
+    width: 80vw;
+    padding: 4px 20px;
+  }
+  #main-card h2 { font-size: 1.8rem;}
+  #main-card-img-container img {
+    height: 75px;
+    width: 75px;
+    margin: 5px 10px;
+  }
+
+  #content { 
+    margin: 0 20px; 
+    width: 90vw;
+  }
+  #content h2 { 
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  #content-1 { flex-direction: column; }
+  #content-1 img {
+    border-radius: 20px;
+    width: 400;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+  }
+  #content-1 p { text-align: center;}
+  #content-1 h2 { text-align: center;}
+
+  #content-2 img {
+    width: 90vw;
+    height: 150px;
+    border-radius: 20px;
+  }
+  #content-2-sub h2 { text-align: center; }
+
+  details { 
+    padding: 5px 10px;
+    margin: 30px 0 15px; 
+  }
+  summary h3 { 
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  details p { font-size: 1rem; }
+  details th, td { 
+    font-size: 0.8rem;
+    padding: 5px 5px;
+  }
+
+  #content-3 { flex-direction: column; }
+  #content-3 p { text-align: center; }
+  #content-3 h2 { text-align: center; }
+  #content-3 img { 
+    margin: 10px 15px; 
+    width: 90vw;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  #content-4 img {
+    width: 90vw;
+    border-radius: 20px;
+  }
+
+  footer { 
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 150px 0;
+  }
+  #made-by p, a { 
+    text-align: center; 
+    font-size: 1rem;
+  }
+  #participants { flex-direction: column; }
+  #participants p { 
+    margin: 0 15px;
+    text-align: center;
+  }
+  #contact-info p { text-align: center; }
+  strong { text-align: center; }
+}
+
