@@ -359,7 +359,7 @@ footer p, a {
   #content-1 { flex-direction: column; }
   #content-1 img {
     border-radius: 20px;
-    width: 400;
+    width: 90vw;
     height: 300px;
     object-fit: cover;
     margin: 20px auto;
