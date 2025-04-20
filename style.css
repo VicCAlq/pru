@@ -224,10 +224,12 @@ details th, td {
   font-size: 1.3rem;
   padding: 10px 15px;
 }
-details p { 
+details p, ul, li { 
   color: var(--bg);
   text-align: left;
   font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin: 0 10px 5px 0;
 }
 .illegal-methods td {
   background-color: var(--visited);
